@@ -12,14 +12,32 @@
 % Example:
 % Mass      (Kg)
 M1 = M1 * 1e-3;              % Convert g -> Kg
+R1 = R1 * 1e3; %Ohms
+R2 = R2 * 1e3; 
+C1 = C1 * 1e-6; %F
+C2 = C2 * 1e-6; 
+MJ = MJ * 1e-7; %kgm^2 
+MB = MB * 1e-7; %kgm^2/s 
+ML = ML * 1e-3; %H 
+MR = MR * 1e3; %Ohms 
+MT = MT * 1e5; %Nm/A 
+GM1 = GM1 * 1e-3; %kg 
+GJ1 = GJ1 * 1e-3; %kgm^2
+GB1 = GB1 * 1e-3; %kgm^2/s
+GM2 = GM2 * 1e-3; 
+GJ2 = GJ2 * 1e-3; 
+GB2 = GB2 * 1e-3; 
 
+Psi2Pa = 6894.76; %Convert PSI to Pa 
 
 % ========
 %    Q0
 % ========
 % Pump
 % ----
-
+Pump0n = [PK0 * Psi2Pa]; 
+Pump0d = [(PT0*1e-3), 1]; 
+Pump0sat = PM0*Psi2Pa; %Max/min output of pump 
 % Cylinder
 % --------
 
@@ -41,6 +59,7 @@ M1 = M1 * 1e-3;              % Convert g -> Kg
 
 % Gravity
 % -------
+
 
 % Feedback
 % --------
