@@ -27,19 +27,22 @@ GB1 = GB1 * 1e-3; %kgm^2/s
 GM2 = GM2 * 1e-3; 
 GJ2 = GJ2 * 1e-3; 
 GB2 = GB2 * 1e-3; 
-
-Psi2Pa = 6894.76; %Convert PSI to Pa 
+PK0 = PK0 * 6894.76; %PSI to Pa 
+PT0 = PT0 * 1e-3; 
+PM0 = PM0 * 6894.76; 
 
 % ========
 %    Q0
 % ========
 % Pump
 % ----
-Pump0n = [PK0 * Psi2Pa]; 
-Pump0d = [(PT0*1e-3), 1]; 
-Pump0sat = PM0*Psi2Pa; %Max/min output of pump 
+Pump0n = PK0; 
+Pump0d = [PT0 1]; 
+Pump0sat = PM0; %Max/min output of pump 
 % Cylinder
 % --------
+JntMin0 = -0.5; 
+JntMax0 = 4.5; 
 
 % Feedback
 % --------
