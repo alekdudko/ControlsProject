@@ -58,15 +58,18 @@ Amp1d = [C2 1/R2];
 AmpSat1 = VSS; 
 % Motor
 % -----
-Elec1n = 1/MR; 
+Elec1n = 1/MR; %1/R
 TConst1 = 5; %Nm/A  
-Mech1d = [0.016 65e-6]; %1/(Js + B)
+Mech1d = [0.016 65e-6]; % 1/(Js + B)
+BackEMF1 = (9.55/25); % 1 rad/s = 9.55 RPM, 1/(RPM/V) = V/RPM
 % Gear
 % ----
-
+JntMax1 = pi/2; 
+JntMin1 = -pi; 
+Gear1 = 50; 
 % Gravity
 % -------
-
+Grav = G; 
 
 % Feedback
 % --------
@@ -82,13 +85,18 @@ Amp2d = [C2 1/R2];
 AmpSat2 = 480;  
 % Motor
 % -----
-
+Elec2n = 1/MR; %1/R
+TConst2 = 5; %Nm/A  
+Mech2d = [0.016 65e-6]; % 1/(Js + B)
+BackEMF2 = (9.55/25); % 1 rad/s = 9.55 RPM, 1/(RPM/V) = V/RPM
 % Gear
 % ----
-
+JntMax2 = 4*pi/5; 
+JntMin2 = -4*pi/5; 
+Gear2 = 5; 
 % Feedback
 % --------
-
+FB2 = 1; %Not sure how to calculate 
 
 % ==================
 % TRANSFER FUNCTIONS
