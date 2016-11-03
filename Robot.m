@@ -53,10 +53,14 @@ JntMax0 = 4.5;
 % ========
 % Amp
 % ---
-
+Amp1n = [C1+C2 1/R1+1/R2]; 
+Amp1d = [C2 1/R2]; 
+AmpSat1 = VSS; 
 % Motor
 % -----
-
+Elec1n = 1/MR; 
+TConst1 = 5; %Nm/A  
+Mech1d = [0.016 65e-6]; %1/(Js + B)
 % Gear
 % ----
 
@@ -73,7 +77,9 @@ JntMax0 = 4.5;
 % ========
 % Amp
 % ---
-
+Amp2n = [C1+C2 1/R1+1/R2]; 
+Amp2d = [C2 1/R2]; 
+AmpSat2 = 480;  
 % Motor
 % -----
 
