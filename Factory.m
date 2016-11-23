@@ -14,7 +14,8 @@ DEFAULT;          % Assign all default values
 % To display ideal robot trajectory:
 %   - comment out the following two lines to use default values
 %   - manually bypass all integrators in the Controller block
-Robot;            % Overwrite default system model with computed values
+%Robot;            % Overwrite default system model with computed values
+load('SolnPart1.mat'); 
 Controller;       % Overwrite PID gains & throughput values
 
 % ==========
