@@ -12,6 +12,7 @@
 % Example:
 % Mass      (Kg)
 
+
 M1 = M1 * 1e-3;% Convert g -> Kg
 R1 = R1 * 1e3; % kOhms - > Ohms
 R2 = R2 * 1e3; % kOhms - > Ohms

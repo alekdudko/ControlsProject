@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.268"
+    ComputedModelVersion    "1.270"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -42,7 +42,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-17.0, 125.0, 1375.0, 885.0]
+      Location		      [-6.0, -6.0, 1381.0, 885.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -64,21 +64,21 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "344"
-	  Extents		  [2444.0, 1445.0]
-	  ZoomFactor		  [1.0]
+	  LoadSaveID		  "687"
+	  Extents		  [2456.0, 1445.0]
+	  ZoomFactor		  [1.03]
 	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "687"
-	  Extents		  [2444.0, 1445.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [-119.15173348632106, -282.80813534917206]
+	  LoadSaveID		  "256"
+	  Extents		  [2736.0, 1824.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-362.5, 29.624999999999659]
 	}
 	PropName		"EditorsInfo"
       }
@@ -100,7 +100,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAcgAABgsAAAC6AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAASwD///8AAAnOAAAGCwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAASwD///8AAAnaAAAGCwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAADb/////wAAAAAAAAAA/////wEAAAGG/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAJh/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAXI/////wAAAAAAAAAA/"
@@ -113,9 +113,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Graham"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 01:02:46 2016"
-  RTWModifiedTimeStamp	  401331760
-  ModelVersionFormat	  "1.%<AutoIncrement:268>"
+  LastModifiedDate	  "Tue Nov 22 19:25:03 2016"
+  RTWModifiedTimeStamp	  401743020
+  ModelVersionFormat	  "1.%<AutoIncrement:270>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1227,7 +1227,7 @@ Model {
       Variant		      off
       System {
 	Name			"3D Graphic"
-	Location		[-17, 125, 1358, 1010]
+	Location		[-6, -6, 1375, 879]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2659,7 +2659,7 @@ Model {
       Variant		      off
       System {
 	Name			"Controller"
-	Location		[-17, 125, 1358, 1010]
+	Location		[-6, -6, 1375, 879]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2671,7 +2671,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"103"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Qd"
@@ -2996,6 +2996,21 @@ Model {
 	  DifferentiatorOutMin	  "[]"
 	  DifferentiatorOutMax	  "[]"
 	  DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
+	  Port {
+	    PortNumber		    1
+	    Array {
+	      Type		      "Struct"
+	      Dimension		      1
+	      MATStruct {
+		Type			"in"
+		OpenLoop		"on"
+		BusElementName		""
+	      }
+	      PropName		      "LinearAnalysisIO"
+	    }
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
 	}
 	Block {
 	  BlockType		  Reference
@@ -3121,21 +3136,6 @@ Model {
 	  DifferentiatorOutMin	  "[]"
 	  DifferentiatorOutMax	  "[]"
 	  DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
-	  Port {
-	    PortNumber		    1
-	    Array {
-	      Type		      "Struct"
-	      Dimension		      1
-	      MATStruct {
-		Type			"in"
-		OpenLoop		"on"
-		BusElementName		""
-	      }
-	      PropName		      "LinearAnalysisIO"
-	    }
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
 	}
 	Block {
 	  BlockType		  Demux
@@ -3297,18 +3297,6 @@ Model {
 	  InputPortMap		  "u0"
 	  UpperLimit		  "JntMax1"
 	  LowerLimit		  "JntMin1"
-	}
-	Block {
-	  BlockType		  Saturate
-	  Name			  "Jnt Limit\nQ2"
-	  SID			  "713"
-	  Ports			  [1, 1]
-	  Position		  [920, 580, 950, 610]
-	  ZOrder		  271
-	  BackgroundColor	  "red"
-	  InputPortMap		  "u0"
-	  UpperLimit		  "JntMax2"
-	  LowerLimit		  "JntMin2"
 	  Port {
 	    PortNumber		    1
 	    Array {
@@ -3324,6 +3312,18 @@ Model {
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Jnt Limit\nQ2"
+	  SID			  "713"
+	  Ports			  [1, 1]
+	  Position		  [920, 580, 950, 610]
+	  ZOrder		  271
+	  BackgroundColor	  "red"
+	  InputPortMap		  "u0"
+	  UpperLimit		  "JntMax2"
+	  LowerLimit		  "JntMin2"
 	}
 	Block {
 	  BlockType		  TransferFcn
@@ -4047,18 +4047,16 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  291
-	  SrcBlock		  "Step"
+	  ZOrder		  293
+	  SrcBlock		  "Demux"
 	  SrcPort		  1
-	  Points		  [9, 0; 0, 66; -49, 0]
 	  DstBlock		  "Sum6"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  292
-	  SrcBlock		  "Step1"
-	  SrcPort		  1
-	  Points		  [9, 0; 0, 47; -59, 0]
+	  ZOrder		  294
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
 	  DstBlock		  "Sum2"
 	  DstPort		  1
 	}
@@ -4290,8 +4288,8 @@ Model {
       Variant		      off
       System {
 	Name			"Forward Kinematics"
-	Location		[-17, 125, 1358, 1010]
-	Open			on
+	Location		[-6, -6, 1375, 879]
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4690,8 +4688,8 @@ Model {
       Variant		      off
       System {
 	Name			"Inverse Kinematics"
-	Location		[-17, 125, 1358, 1010]
-	Open			off
+	Location		[-6, -6, 1375, 879]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4702,7 +4700,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "XYT"
