@@ -6,9 +6,9 @@
 % Find the values that are stable and allow you to maximize throughtput
 % as much as possible without violating the Position Error constraint.
 
-PID0 = [0.7 0.06 1];
-PID1 = [1 0 0];
-PID2 = [1 0 0];
+PID0 = [0.001 0.002 0.001];
+PID1 = [230 75 -0.469];
+PID2 = [40 60 -0.5];
 
 
 % ==========
