@@ -157,6 +157,8 @@ Gear2 = 1/GR2;
 % --------
 FB2 = 1;
 
+load('SolnPart1.mat'); 
+
 
 
 
