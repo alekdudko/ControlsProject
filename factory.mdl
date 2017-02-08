@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.297"
+    ComputedModelVersion    "1.300"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -64,7 +64,7 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "581"
 	  Extents		  [2456.0, 1445.0]
@@ -73,12 +73,12 @@ Model {
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "687"
 	  Extents		  [2456.0, 1445.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [-133.96039603960389, -189.7772277227723]
+	  ZoomFactor		  [1.005753244937682]
+	  Offset		  [-24.026777146194945, 27.304287043175123]
 	}
 	PropName		"EditorsInfo"
       }
@@ -113,9 +113,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Graham"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 30 11:20:26 2016"
-  RTWModifiedTimeStamp	  402405458
-  ModelVersionFormat	  "1.%<AutoIncrement:297>"
+  LastModifiedDate	  "Fri Dec 02 02:11:11 2016"
+  RTWModifiedTimeStamp	  402544695
+  ModelVersionFormat	  "1.%<AutoIncrement:300>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1317,16 +1317,6 @@ Model {
 	  AutoView		  on
 	  VideoDimensions	  "[]"
 	  AllowVariableSize	  off
-	  FigureProperties	  "{'Position', 'Name', 'Viewpoint', 'CameraBound', 'CameraDirection', 'CameraPosition', 'CameraUp"
-	  "Vector', 'ZoomFactor', 'Antialiasing', 'Headlight', 'Lighting', 'NavPanel', 'Sound', 'StatusBar', 'Stereo3D', 'Ster"
-	  "eo3DCameraOffset', 'Stereo3DHIT', 'ToolBar', 'Textures', 'Transparency', 'Triad', 'Wireframe', 'NavZones', 'NavMode"
-	  "', 'NavSpeed', 'CaptureFileFormat', 'CaptureFileName', 'Record2DCompressMethod', 'Record2DCompressQuality', 'Record"
-	  "2D', 'Record2DFileName', 'Record2DFPS'; [5.0000000000000000e+00   9.2000000000000000e+01   5.7600000000000000e+02  "
-	  " 3.5000000000000000e+02], '', '_untitled_1', 'on', [0.0000000000000000e+00   0.0000000000000000e+00  -1.00000000000"
-	  "00000e+00], [0.0000000000000000e+00   0.0000000000000000e+00   0.0000000000000000e+00], [0.0000000000000000e+00   1"
-	  ".0000000000000000e+00   0.0000000000000000e+00], [1.0000000000000000e+00], 'on', 'off', 'on', 'halfbar', 'on', 'on'"
-	  ", 'off', [1.0000000149011612e-01], [0.0000000000000000e+00], 'on', 'on', 'on', 'none', 'off', 'off', 'walk', 'norma"
-	  "l', 'tif', '%f_anim_%n.tif', 'auto', [7.5000000000000000e+01], 'off', '%f_anim_%n.avi', 'auto'} "
 	}
 	Block {
 	  BlockType		  Concatenate
@@ -2667,7 +2657,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"101"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Qd"
@@ -2728,21 +2718,6 @@ Model {
 	  SID			  "693"
 	  Position		  [805, 147, 835, 183]
 	  ZOrder		  268
-	  Port {
-	    PortNumber		    1
-	    Array {
-	      Type		      "Struct"
-	      Dimension		      1
-	      MATStruct {
-		Type			"out"
-		OpenLoop		"on"
-		BusElementName		""
-	      }
-	      PropName		      "LinearAnalysisIO"
-	    }
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
 	}
 	Block {
 	  BlockType		  ManualSwitch
@@ -2882,21 +2857,6 @@ Model {
 	  DifferentiatorOutMin	  "[]"
 	  DifferentiatorOutMax	  "[]"
 	  DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
-	  Port {
-	    PortNumber		    1
-	    Array {
-	      Type		      "Struct"
-	      Dimension		      1
-	      MATStruct {
-		Type			"in"
-		OpenLoop		"on"
-		BusElementName		""
-	      }
-	      PropName		      "LinearAnalysisIO"
-	    }
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
 	}
 	Block {
 	  BlockType		  Reference
@@ -3158,6 +3118,21 @@ Model {
 	  ShowName		  off
 	  Outputs		  "3"
 	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    3
+	    Array {
+	      Type		      "Struct"
+	      Dimension		      1
+	      MATStruct {
+		Type			"in"
+		OpenLoop		"on"
+		BusElementName		""
+	      }
+	      PropName		      "LinearAnalysisIO"
+	    }
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
 	}
 	Block {
 	  BlockType		  TransferFcn
@@ -3320,6 +3295,21 @@ Model {
 	  InputPortMap		  "u0"
 	  UpperLimit		  "JntMax2"
 	  LowerLimit		  "JntMin2"
+	  Port {
+	    PortNumber		    1
+	    Array {
+	      Type		      "Struct"
+	      Dimension		      1
+	      MATStruct {
+		Type			"out"
+		OpenLoop		"on"
+		BusElementName		""
+	      }
+	      PropName		      "LinearAnalysisIO"
+	    }
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
 	}
 	Block {
 	  BlockType		  TransferFcn

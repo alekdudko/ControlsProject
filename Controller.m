@@ -6,10 +6,9 @@
 % Find the values that are stable and allow you to maximize throughtput
 % as much as possible without violating the Position Error constraint.
 
-PID0 = [0.001 0.002 0.001];
-PID1 = [230 75 -0.469];
-PID2 = [40 60 -0.5];
-
+PID0 = [0.000621 0.00182 0.000998];
+PID1 = [236 -13.6 -0.9];
+PID2 = [43.7 0.534 -0.35];
 
 % ==========
 % THROUGHPUT
@@ -17,7 +16,7 @@ PID2 = [40 60 -0.5];
 % Reduce these values as much as possible to increase throughput 
 % as much as possible without violating the Position Error constraint.
 
-PaintTime = 3;    % Time spent painting truck
+PaintTime = 3.5;    % Time spent painting truck
 ResetTime = 1;    % Time spent resetting robot position for next truck
 
 
